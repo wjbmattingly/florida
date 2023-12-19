@@ -10,7 +10,7 @@ Welcome to Florida, a Python utility library designed to simplify and enhance yo
 As of now, Florida includes the following feature:
 
 - `dict2schema`: A function that generates a schema of a dictionary's organization, showing each key and the type of its value. The schema can be returned as a string or as a nested dictionary.
-- `target2index``: A function that takes in a nested dictionary or list and a target key or index, and returns Python code snippets to access instances of that key or index. It's useful for navigating complex nested structures.
+- `target2index`: A function that takes in a nested dictionary or list and a target key or index, and returns Python code snippets to access instances of that key or index. It's useful for navigating complex nested structures.
 
 ## Installation
 
