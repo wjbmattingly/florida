@@ -47,7 +47,7 @@ print(dict2schema(example_dict, indent=0))
 # print(dict2schema(example_dict, style="dict"))
 ```
 
-# Expected Output:
+### Expected Output:
 ```
 key1 (str)
 key2 (dict)
