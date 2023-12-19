@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: florida
-Version: 0.0.1
+Version: 0.0.2
 Summary: A collection of Python utilities to simplify coding tasks
-Home-page: https://github.com/wjbmattingly/william
+Home-page: https://github.com/wjbmattingly/florida
 Author: WJB Mattingly
 Keywords: python utilities tools
 Classifier: Development Status :: 3 - Alpha
@@ -17,28 +17,31 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 
-# William
+# Florida
 
-Welcome to William, a Python utility library designed to simplify and enhance your coding experience. William is built with the goal of providing easy-to-use, efficient tools to aid developers in various tasks, making coding more intuitive and productive.
+<img src="https://github.com/wjbmattingly/florida/raw/main/images/florida.png" alt="florida logo" width="500" height="500">
+
+
+Welcome to Florida, a Python utility library designed to simplify and enhance your coding experience. Florida is built with the goal of providing easy-to-use, efficient tools to aid developers in various tasks, making coding more intuitive and productive.
 
 ## Features
 
-As of now, William includes the following feature:
+As of now, Florida includes the following feature:
 
 - `dict2schema`: A function that generates a schema of a dictionary's organization, showing each key and the type of its value. The schema can be returned as a string or as a nested dictionary.
 
 ## Installation
 
-Currently, William is not available on PyPI, so it can be installed by cloning the repository:
+Currently, Florida is not available on PyPI, so it can be installed by cloning the repository:
 
 ```bash
-pip install william
+pip install florida
 ```
 
 ## Usage
 
 ```python
-from william import dict2schema
+from florida import dict2schema
 
 # Example dictionary
 example_dict = {
@@ -59,5 +62,7 @@ print(dict2schema(example_dict))
 
 # Get the schema as a dictionary
 print(dict2schema(example_dict, style="dict"))
-
 ```
+
+## License
+Florida is released under the MIT License.
