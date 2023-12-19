@@ -1,6 +1,7 @@
 # Florida
 
-![florida logo](images/florida.png)
+<img src="https://github.com/wjbmattingly/florida/raw/main/images/florida.png" alt="florida logo" width="500" height="500">
+
 
 Welcome to Florida, a Python utility library designed to simplify and enhance your coding experience. Florida is built with the goal of providing easy-to-use, efficient tools to aid developers in various tasks, making coding more intuitive and productive.
 
