@@ -25,12 +25,14 @@ pip install florida
 from florida import dict2schema
 
 # Example dictionary
+# Example dictionary
 example_dict = {
     'key1': 'value1',
     'key2': {
         'subkey1': 'subvalue1',
         'subkey2': {
-            'subsubkey1': 'subsubvalue1'
+            'subsubkey1': 'subsubvalue1',
+            "list1": [{"test": "case"}]
         },
         'subkey3': 123,
         'subkey4': [1, 2, 3]
@@ -39,10 +41,28 @@ example_dict = {
 }
 
 # Get the schema as a string
-print(dict2schema(example_dict))
+print(dict2schema(example_dict, indent=0))
 
 # Get the schema as a dictionary
-print(dict2schema(example_dict, style="dict"))
+# print(dict2schema(example_dict, style="dict"))
+```
+
+# Expected Output:
+```
+key1 (str)
+key2 (dict)
+    subkey1 (str)
+    subkey2 (dict)
+        subsubkey1 (str)
+        list1 (list)
+            0 (dict)
+                test (str)
+    subkey3 (int)
+    subkey4 (list)
+        0 (int)
+        1 (int)
+        2 (int)
+key3 (bool)
 ```
 
 ## License
