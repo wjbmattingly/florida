@@ -1,8 +1,0 @@
-README.md
-setup.py
-William.egg-info/PKG-INFO
-William.egg-info/SOURCES.txt
-William.egg-info/dependency_links.txt
-William.egg-info/top_level.txt
-william/__init__.py
-william/parsing.py

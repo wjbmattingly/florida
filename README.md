@@ -68,7 +68,7 @@ key3 (bool)
 
 ## Using target2index
 
-```
+```python
 from florida import dict2index
 
 # Example nested structure
