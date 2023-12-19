@@ -69,7 +69,7 @@ key3 (bool)
 ## Using target2index
 
 ```python
-from florida import dict2index
+from florida import target2index
 
 # Example nested structure
 nested_structure = {
