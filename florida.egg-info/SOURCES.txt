@@ -1,0 +1,8 @@
+README.md
+setup.py
+florida.egg-info/PKG-INFO
+florida.egg-info/SOURCES.txt
+florida.egg-info/dependency_links.txt
+florida.egg-info/top_level.txt
+william/__init__.py
+william/parsing.py
