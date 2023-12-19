@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='florida',
-    version='0.0.3',
+    version='0.0.4',
     author='WJB Mattingly',
     description='A collection of Python utilities to simplify coding tasks',
     long_description=open('README.md').read(),
