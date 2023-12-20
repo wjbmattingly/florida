@@ -1,4 +1,4 @@
-def dict2schema(d, style="string", indent=0, show_pipes=False, pipe_levels=None):
+def dict2schema(d, style="string", indent=0, show_pipes=True, pipe_levels=None):
     """
     Generates a schema of a dictionary's organization, showing each key and the type of its value.
     It also handles nested dictionaries within lists. The schema can be returned as a string or as
@@ -26,10 +26,18 @@ def dict2schema(d, style="string", indent=0, show_pipes=False, pipe_levels=None)
 
     for index, (key, value) in enumerate(items):
         key_type_info = f"{key} ({type(value).__name__})"
-        pipe_str = ''.join(['│   ' if level else '    ' for level in pipe_levels]) if show_pipes else ''
         
+        if show_pipes:
+            pipe_str = ''.join(['│   ' if level else '    ' for level in pipe_levels])
+        else:
+            indent_str = ' ' * 4 * len(pipe_levels)
+            pipe_str = indent_str
+
         if style == "string":
-            schema += pipe_str + '├── ' + key_type_info + "\n"
+            if show_pipes == True:
+                schema += pipe_str + '├── ' + key_type_info + "\n"
+            else:
+                schema += pipe_str + '    ' + key_type_info + "\n"
         else:
             schema_dict[key] = {'type': type(value).__name__}
 
@@ -42,6 +50,9 @@ def dict2schema(d, style="string", indent=0, show_pipes=False, pipe_levels=None)
                 schema_dict[key]['nested'] = nested_schema
 
     return schema if style == "string" else schema_dict
+
+
+
 
 
 def find_path_to_item(nested_structure, target, path=None, found_paths=None):
