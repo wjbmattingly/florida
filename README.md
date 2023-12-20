@@ -82,7 +82,7 @@ nested_structure = {
 }
 
 # Get the Python code to access 'content'
-print(dict2index('content', nested_structure))
+print(target2index('content', nested_structure))
 ```
 
 ### Expected Output
